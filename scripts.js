@@ -139,7 +139,7 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      getAllTasks()
+      success: getAllTasks
     });
   }
 
