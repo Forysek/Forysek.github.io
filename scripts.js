@@ -91,7 +91,6 @@ $(document).ready(function() {
       method: "PUT",
       processData: false,
       contentType: "application/json; charset=utf-8",
-      dataType: 'json',
       data: JSON.stringify({
         id: taskId,
         title: taskTitle,
