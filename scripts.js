@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     function getAllAvailableBoards(callback, callbackArgs) {
       var requestUrl = trelloApiRoot + 'boards';
-
+  
       $.ajax({
         url: requestUrl,
         method: 'GET',
