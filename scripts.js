@@ -91,6 +91,7 @@ $(document).ready(function() {
       method: "PUT",
       processData: false,
       contentType: "application/json; charset=utf-8",
+      dataType: 'json',
       data: JSON.stringify({
         id: taskId,
         title: taskTitle,
@@ -138,7 +139,7 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      success: getAllTasks
+      success: getAllTasks()
     });
   }
 
