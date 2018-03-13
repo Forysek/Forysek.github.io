@@ -138,10 +138,8 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
+      success: getAllTasks
     });
-  function() {
-      getAllTasks()
-    }
   }
 
   function toggleEditingState() {
