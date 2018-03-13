@@ -134,13 +134,14 @@ $(document).ready(function() {
       method: 'POST',
       processData: false,
       contentType: "application/json; charset=utf-8",
-      dataType: 'json',
       data: JSON.stringify({
         title: taskTitle,
         content: taskContent
       }),
-      success: getAllTasks
     });
+    success: function() {
+      getAllTasks()
+    }
   }
 
   function toggleEditingState() {
