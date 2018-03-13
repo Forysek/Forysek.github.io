@@ -139,9 +139,7 @@ $(document).ready(function() {
         content: taskContent
       }),
     });
-    function() {
-      getAllTasks();
-    }
+    getAllTasks();
   }
 
   function toggleEditingState() {
