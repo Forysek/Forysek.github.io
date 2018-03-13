@@ -139,7 +139,9 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      getAllTasks()
+      function () {
+        getAllTasks()
+      }
     });
   }
 
