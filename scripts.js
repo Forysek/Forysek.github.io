@@ -140,7 +140,7 @@ $(document).ready(function() {
         content: taskContent
       }),
     });
-    getAllTasks;
+    getAllTasks();
   }
 
   function toggleEditingState() {
