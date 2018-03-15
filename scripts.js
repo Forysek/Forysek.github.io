@@ -139,9 +139,7 @@ $(document).ready(function() {
         title: taskTitle,
         content: taskContent
       }),
-      success: function(){
-      getAllTasks();
-    }
+      success: getAllTasks
     });
   }
 
